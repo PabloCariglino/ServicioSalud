@@ -1,0 +1,46 @@
+
+.header_section {
+ 
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  }
+  
+  .logo {
+    flex-grow: 1; /* Permite que el logo ocupe el espacio restante */
+  }
+  
+  .navbar {
+    flex-grow: 1; /* Permite que la barra de navegación ocupe el espacio restante */
+  }
+
+  /* Estilo para alinear los botones a la derecha */
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Estilo para ajustar la separación entre los elementos en la barra de navegación */
+.navbar-nav>li {
+  margin-right: 10px;
+}
+
+/* Estilo para la imagen del logo */
+.logo {
+  display: flex;
+  align-items: center;
+  max-width: 43px; 
+  height: auto;
+}
+
+
+/* Opcional: Estilo para ajustar el espacio entre la imagen del logo y los botones */
+.logo a {
+  margin-right: 1px;
+  max-width: 43px; 
+  height: auto;
+}
+
+  
+  
+ 

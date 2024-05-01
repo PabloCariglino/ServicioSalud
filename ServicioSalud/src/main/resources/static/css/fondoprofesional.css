@@ -1,0 +1,92 @@
+body{
+   
+    background-image: url('/images/fondo profesional.jpg') ;
+    margin:0;
+    
+}
+.contendor-imagen{
+    position:center;
+}
+.contenedor-formulario-usuario{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 90vh;
+    width: 61%;
+}
+.contenedor-formulario-portal{
+    display:flex;
+    align-items: center;
+    justify-content:right;
+    height: 90vh;
+    width: 58%; 
+   
+}
+.contenedor-formulario-login{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 90vh;
+    width: 58%;
+}
+
+.mi-formulario{
+   border: 2px solid #007BFF;
+   padding: 20px;
+   border-radius: 10px;
+   background-color: #f0f0f088; 
+   position: center;
+   
+}
+
+.mi-recuadro{
+    border: 2px solid #007BFF; 
+    padding: 30px; 
+    margin: 20px auto; 
+    border-radius: 10px;
+    background-color: #f0f0f0b0; 
+    float: left;
+    width: 25%;
+    margin-right: 50px;
+}
+
+.container{
+    margin: 40px;
+}
+
+#carouselExampleControls{
+    margin-top: 20px;
+    float: right;
+    width: 60%;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Estilo para alinear los botones a la derecha */
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Estilo para ajustar la separación entre los elementos en la barra de navegación */
+.navbar-nav>li {
+    margin-right: 10px;
+}
+
+/* Estilo para la imagen del logo */
+.logo {
+    display: flex;
+    align-items: center;
+    max-width: 43px; 
+    height: auto;
+}
+
+
+/* Opcional: Estilo para ajustar el espacio entre la imagen del logo y los botones */
+.logo a {
+    margin-right: 1px;
+    max-width: 43px; 
+    height: auto;
+}

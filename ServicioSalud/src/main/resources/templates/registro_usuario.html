@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/fondo.css">
+  <link rel="icon" href="/images/logo2.png" type="image/png">
+  <title>Mi Salud Digital</title>
+</head>
+
+<body>
+  <header th:replace="~{fragments/header :: head}"></header>
+  <div class="imagen-fondoadmin" sec:authorize="hasRole('ROLE_ADMIN')"></div>
+<p>POR FAVOR REGISTRESE PARA ADMINISTRAR SUS TURNOS Y PERFIL DE SALUD </p>
+
+  <div class="imagen-fondouser" sec:authorize="hasRole('ROLE_USER')"></div>
+  <div class="contenedor-imagen">
+
+    <div class="container col-md-4 text-center contenedor-formulario-usuario">
+
+      <form class="FormRegistro mi-formulario" action="/registroUsuario" method="POST" enctype="multipart/form-data">
+
+        <h2>Registro usuario</h2>
+
+        <div class="form-group mb-2">
+          <input type="text" class="form-control" name="nombreUsuario" placeholder="NOMBRE"
+            th:value="${nombreUsuario}" />
+        </div>
+
+        <div class="form-group mb-2">
+          <input type="email" class="form-control" name="email" placeholder="EMAIL" th:value="${email}" />
+        </div>
+
+        <div class="form-group mb-2">
+          <input type="password" class="form-control" name="password" placeholder="CONTRASEÑA" th:value="${password}" />
+        </div>
+
+        <div class="form-group mb-2">
+          <input type="password" class="form-control" name="password2" placeholder="REPETIR CONTRASEÑA"
+            th:value="${password2}" />
+        </div>
+        <div class="form-group my-3">
+          <input type="file" class="form-control" name="archivo" accept="image/*">
+        </div>
+        <button class="btn btn-primary" type="submit">Registrarme</button>
+      </form>
+
+
+    </div>
+  </div>
+  </div>
+
+  <footer th:replace="~{fragments/footer :: footer}"></footer>
+
+  <!-- Mostrar nombre del usuario mediante la session -->
+  <h2 th:if="${session.usuariosession != null}" th:text="${session.usuariosession.nombreUsuario}"></h2>
+  <!-- header section start -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/fondo.css">
+  <link rel="icon" href="/images/logo2.png" type="image/png">
+
+  <title>Mi Salud Digital</title>
+</head>
+
+<body>
+  <header th:replace="~{fragments/header :: head}" style="padding-bottom: 100;"></header>
+
+  <div class="imagen-fondoadmin" sec:authorize="hasRole('ROLE_ADMIN')"></div>
+
+  <div class="imagen-fondouser" sec:authorize="hasRole('ROLE_USER')"></div>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/index-slide5.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Cuidado con enfoque personalizado</h5>
+          <p>Nuestro hospital se preocupa por su bienestar integral.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/index-slide6.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Innovación en salud</h5>
+          <p>Tecnología avanzada y atención médica de excelencia en nuestro centro de salud.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/index-slide0.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Comunidad comprometida</h5>
+          <p>Trabajamos juntos para su salud y tranquilidad en nuestro hospital publico.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <section class="presentacion">
+    <div class="mi-recuadro">
+      <h2><span class="destacado"> BIENVENIDOS A SALUD DIGITAL</span></h2>
+      <h3><span class="destacado"> Somos un colectivo de profesionales de la salud</span></h3>
+      <p>Brindamos atención médica en diversas áreas, como pediatría, ginecología, cardiología y clínica médica. Nos
+        dedicamos a la prevención y promoción de la vida sana.
+        Nuestra misión es promover el bienestar y la salud de los usuarios, mediante servicios personalizados,
+        basados tanto en nuestro conocimiento y experiencia en salud, así como en el desarrollo e implementación de
+        nuevas tecnologías de la información.
+
+      </p>
+    </div>
+  </section>
+
+  <section class="section-turnos" id="turnos">
+    <p>RESERVA DE TURNOS</p>
+  </section>
+
+
+  <section class="especialidades" id="especialidades">
+    <div class="card" style="width: 18rem;">
+      <img src="/images/indexpediatria.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PEDIATRIA</h5>
+        <p class="card-text">Expertos en la salud de tus hijos, brindando cuidados atentos y especializados desde la
+          infancia hasta la adolescencia.</p>
+        <a href="#" class="btn btn-primary">Reservar turno</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="/images/indexcardiologia.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CARDIOLOGIA</h5>
+        <p class="card-text">Expertos en cuidado cardíaco para su bienestar total.</p>
+        <a href="#" class="btn btn-primary">Reservar turno</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="/images/indexginecologia.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">GINECOLOGIA</h5>
+        <p class="card-text">Experiencia en salud femenina para todas las etapas de la vida. Cuidamos tu bienestar con
+          atención especializada y comprensiva.</p>
+        <a href="#" class="btn btn-primary">Reservar turno</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="/images/indexclinica.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CLINICA MEDICA</h5>
+        <p class="card-text">Diagnóstico y tratamiento para tu salud completa. Expertos en medicina interna, cuidando de
+          ti con precisión y dedicación.</p>
+        <a href="#" class="btn btn-primary">Reservar turno</a>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="img-logo">
+    <img src="/images/logo2.png"style="max-width: 90px; height: auto; display: flex; margin-left: 5px;display: block; margin: auto;" alt="logo">
+
+  </div>
+
+  <section class="suscripcion">
+    <p>Suscríbete a nuestro boletín diario de informacion.</p>
+    <div class="formulario">
+      <input type="email" placeholder="Ingrese su Email" class="input-text">
+      <button type="submit" class="btn-submit">Enviar</button>
+    </div>
+  </section>
+
+
+
+  <footer th:replace="~{fragments/footer :: footer}"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
