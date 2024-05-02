@@ -67,7 +67,7 @@ body {
 }
 
 .imagen-fondoadmin {
-    background-image: url('/images/fadmin.jpg');
+    background-image: url('/images/indexadmin.png');
 
 }
 
@@ -151,8 +151,8 @@ body {
     font-weight: bold;
 }
 
-.section-turnos{
-    background-color:#61a6ab;
+.section-turnos {
+    background-color: #61a6ab;
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.3);
     text-align: center;
     font-weight: 900;
@@ -163,11 +163,11 @@ body {
 
 }
 
-.section-turnos p{
+.section-turnos p {
     padding-top: 12px;
     text-align: center;
     font-size: large;
-   
+
 }
 
 .especialidades {
@@ -186,7 +186,7 @@ body {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     /* Transición suave */
-    
+
 }
 
 .card:hover {
@@ -209,7 +209,7 @@ body {
     margin-bottom: 10px;
     /* Márgenes inferiores para el título y el párrafo */
     font-weight: bold;
-   
+
 }
 
 .btn-primary {
@@ -224,22 +224,22 @@ body {
     /* Mover el botón hacia abajo al final de la tarjeta */
 }
 
-.suscripcion{
-    background-color:rgb(201, 201, 201);
+.suscripcion {
+    background-color: rgb(201, 201, 201);
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.3);
     text-align: center;
     font-weight: 900;
     margin-top: 20px;
-   
+
     padding: 15px;
 
 }
 
-.suscripcion p{
+.suscripcion p {
     padding-top: 12px;
     text-align: center;
     font-size: large;
-   
+
 }
 
 
@@ -251,9 +251,9 @@ body {
     align-items: center;
     justify-content: center;
     height: 80vh;
-    margin: 0 auto;
-    max-width: 400px;
-    margin-top: 50px;
+    /* margin: 0 auto;*/
+    max-width: 600px;
+    margin-top: 63px;
     /*ubicacion desde el margen superior*/
 
 
@@ -262,7 +262,7 @@ body {
 .mi-formulario-usuario {
     text-align: center;
     /*alinea el texto y otros elementos al centro*/
-    padding: 20px;
+    padding: 10px;
     /*agrega espacio de relleno alrededor del contenido del formulario*/
     border-radius: 10px;
     /*aplica bordes redondeados*/
@@ -283,7 +283,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: right;
-    height: 90vh;
+    /*height: 90vh;*/
     width: 58%;
 
 
@@ -312,7 +312,7 @@ body {
 
 .banner_taital {
     padding: 20px;
-    position: relative;
+    /* position: relative;*/
     /*z-index: 1;-->*/
 }
 
@@ -325,8 +325,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    z-index: 1;
+    /*height: 800vh;*/
+    
+
 }
 
 .footer {
@@ -335,8 +336,8 @@ body {
     padding: 20px;
     text-align: center;
 
-    bottom: 0;
-    width: 100%;
+    /*bottom: 0;*/
+    /*width: 100%;*/
     /*z-index: 1; ajusta ubicacion de las capas*/
 }
 

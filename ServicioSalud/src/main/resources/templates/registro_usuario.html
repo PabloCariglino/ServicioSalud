@@ -14,16 +14,17 @@
 <body>
   <header th:replace="~{fragments/header :: head}"></header>
   <div class="imagen-fondoadmin" sec:authorize="hasRole('ROLE_ADMIN')"></div>
-<p>POR FAVOR REGISTRESE PARA ADMINISTRAR SUS TURNOS Y PERFIL DE SALUD </p>
 
   <div class="imagen-fondouser" sec:authorize="hasRole('ROLE_USER')"></div>
+  
   <div class="contenedor-imagen">
 
     <div class="container col-md-4 text-center contenedor-formulario-usuario">
 
       <form class="FormRegistro mi-formulario" action="/registroUsuario" method="POST" enctype="multipart/form-data">
+        <h3>POR FAVOR REGISTRESE PARA RESERVAR TURNOS</h3>
 
-        <h2>Registro usuario</h2>
+       <!-- <h2>Registro usuario</h2>-->
 
         <div class="form-group mb-2">
           <input type="text" class="form-control" name="nombreUsuario" placeholder="NOMBRE"
