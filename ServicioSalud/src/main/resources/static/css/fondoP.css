@@ -1,6 +1,4 @@
-.fondoadmin{
-    background-image: url('/images/vector azul.jpg');
-}
+
 .contendor-imagen{
     position:center;
 }
@@ -51,7 +49,7 @@
     margin: 40px;
 }
 
-#carouselExampleControls{
+/*#carouselExampleControls{
     margin-top: 20px;
     float: right;
     width: 60%;
@@ -60,7 +58,7 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
-}
+}*/
 
 /* Estilo para alinear los botones a la derecha */
 .navbar-nav {

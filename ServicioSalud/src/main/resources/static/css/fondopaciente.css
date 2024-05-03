@@ -167,7 +167,7 @@ body{
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     width: 100%;
    

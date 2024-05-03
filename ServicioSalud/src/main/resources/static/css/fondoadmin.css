@@ -1,6 +1,6 @@
 body {
 
-    background-image: url('/images/indexadmin.jpg');
+    background-image: url('/images/index-admin2.jpg');
 
 
 }
@@ -17,15 +17,106 @@ body {
 
 }
 
-.imagen-fondoadmin {
+
+.navbar {
+
+    padding: 10px;
+}
+
+/* Estilo para alinear los botones a la derecha */
+.navbar-nav {
+    margin-left: auto;
+
+}
+
+/* Estilo para ajustar la separación entre los elementos en la barra de navegación */
+.navbar-nav>li {
+    margin-right: 10px;
+
+}
+
+/* Estilo para la imagen del logo */
+.logo {
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    max-width: 43px;
+    height: auto;
+
+}
+
+
+/* Opcional: Estilo para ajustar el espacio entre la imagen del logo y los botones */
+.logo a {
+    margin-right: 1px;
+    max-width: 43px;
+    height: auto;
+}
+
+/* Configuracion titulo en navbar*/
+.navbar-brand {
+    font-family: 'Trebuchet MS';
+    font-size: 2.0 rem;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+}
+
+.cards-usuarios-admin{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    /* Espacio entre las tarjetas */
+    flex-wrap: wrap;
+    /* Para que las tarjetas se ajusten en filas */
+    margin-top: 100px;
+    z-index: 1; /* Ajusta el z-index de las tarjetas para que estén por encima del fondo */
+
+}
+
+.card {
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    /* Transición suave */
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    /* Mover hacia arriba 5px al pasar el cursor */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    /* Altura completa de la tarjeta */
+    justify-content: space-between;
+    /* Distribuir el espacio verticalmente */
+  
+}
+
+.card-body a{
+    background-color: #61ada0;
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 3);
+
+}
+
+/*.imagen-fondoadmin {
     background-image: url('/images/fadmin.jpg');
 
-}
+}*/
 
-.imagen-fondouser {
+/*.imagen-fondouser {
     background-image: url('/images/fpaciente.jpg');
 
-}
+}*/
 
 
 
@@ -132,7 +223,7 @@ body {
     font-size: x-large;
 }
 
-#carouselExampleControls {
+/*#carouselExampleControls {
     position: absolute;
 
     left: 0;
@@ -160,51 +251,35 @@ body {
     height: 100%;
 
 }
+*/
 
-.navbar {
 
-    padding: 10px;
+
+
+.img-logo-admin{
+    margin-top: 30px;
+    align-content: center;
+   
 }
 
-/* Estilo para alinear los botones a la derecha */
-.navbar-nav {
-    margin-left: auto;
+.info-admin {
+    background-color: rgb(201, 201, 201);
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    font-weight: 900;
+    margin-top: 20px;
 
-
-
-}
-
-/* Estilo para ajustar la separación entre los elementos en la barra de navegación */
-.navbar-nav>li {
-    margin-right: 10px;
-
-}
-
-/* Estilo para la imagen del logo */
-.logo {
-    display: flex;
-    z-index: 1;
-    align-items: center;
-    max-width: 43px;
-    height: auto;
+    padding: 70px;
 
 }
 
+.info-admin p {
+    margin-top: 0;
+    text-align:center;
+    font-size: large;
+    top: 0;
+    left: 0;
 
-/* Opcional: Estilo para ajustar el espacio entre la imagen del logo y los botones */
-.logo a {
-    margin-right: 1px;
-    max-width: 43px;
-    height: auto;
-}
-
-/* Configuracion titulo en navbar*/
-.navbar-brand {
-    font-family: 'Trebuchet MS';
-    font-size: 2.0 rem;
-    font-weight: bold;
-    color: #333;
-    margin-left: 10px;
 }
 
 .footer {
@@ -214,6 +289,7 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1000; /* Asegúrate de que el footer esté en un z-index superior */
 
 
 }
