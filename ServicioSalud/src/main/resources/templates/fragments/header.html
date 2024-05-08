@@ -1,19 +1,22 @@
 <div th:fragment="head">
-    <div class="header_section" style="font-weight: bold;" >
+    <div class="header_section" style="font-weight: bold;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light bg-light fixed-top">
             <div class="logo">
                 <a href="/index"><img src="/images/logo2.png" sec:authorize="!isAuthenticated()"
                         style="max-width: 43px; height: auto; display: flex; margin-left: 5px;" /></a>
-                <span class="navbar-brand">Mi Salud Digital</span>
+                <span class="navbar-brand" sec:authorize="!isAuthenticated()">Mi Salud Digital</span>
                 <a href="/paciente/dashboard"><img src="/images/logo2.png"
                         sec:authorize="isAuthenticated() and hasRole('ROLE_USER')"
-                        style="max-width: 43px; height: auto;" /></a>
+                        style="max-width: 43px; height: auto; display: flex; margin-left: 5px;" /></a>
+                <span class="navbar-brand"sec:authorize="isAuthenticated() and hasRole('ROLE_USER')">Mi Salud Digital</span>
                 <a href="/profesional/dashboard"><img src="/images/logo2.png"
                         sec:authorize="isAuthenticated() and hasRole('ROLE_PROFESIONAL')"
-                        style="max-width: 43px; height: auto;" /></a>
+                        style="max-width: 43px; height: auto; display: flex; margin-left: 5px;" /></a>
+                <span class="navbar-brand"sec:authorize="isAuthenticated() and hasRole('ROLE_PROFESIONAL')">Mi Salud Digital</span>
                 <a href="/admin/dashboard"><img src="/images/logo2.png"
                         sec:authorize="isAuthenticated() and hasRole('ROLE_ADMIN')"
-                        style="max-width: 43px; height: auto;" /></a>
+                        style="max-width: 43px; height: auto; display: flex; margin-left: 5px;" /></a>
+                <span class="navbar-brand"sec:authorize="isAuthenticated() and hasRole('ROLE_ADMIN')">Mi Salud Digital</span>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +25,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/index" sec:authorize="!isAuthenticated()" style="width: auto; height: auto;">Inicio</a>
+                        <a class="nav-link" href="/index" sec:authorize="!isAuthenticated()"
+                            style="width: auto; height: auto;">Inicio</a>
                         <a class="nav-link" href="/paciente/dashboard"
                             sec:authorize="isAuthenticated() and hasRole('ROLE_USER')">Inicio</a>
                         <a class="nav-link" href="/profesional/dashboard"
@@ -40,8 +44,9 @@
                         <a class="nav-link" href="/registrar">Registro</a>
                     </li>
                     <li class="nav-item" sec:authorize="!isAuthenticated()">
-                        <a class="nav-link" href="/login" style="display: flex; align-items: center;" > <img src="/images/icon-usuario.png" 
-                            style="max-width: 25px; height: auto; display: flex; margin-right:7px;" >Acceder</a>
+                        <a class="nav-link" href="/login" style="display: flex; align-items: center;"> <img
+                                src="/images/icon-usuario.png"
+                                style="max-width: 25px; height: auto; display: flex; margin-right:7px;">Acceder</a>
                     </li>
                     <!--  -->
                     <li class="nav-item dropdown" sec:authorize="hasRole('ROLE_USER')">
@@ -65,7 +70,7 @@
                         <!--<a class="nav-link dropdown-toggle" th:if="${session.usuariosession != null}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                             Paciente</a>-->
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="true"> Portal Profesional</a>
+                            data-bs-toggle="dropdown" aria-expanded="true"> Portal Profesional</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="/profesional/datos">Mis Datos</a></li>
                             <li><a class="dropdown-item" href="/profesional/listadoDeTurnos">Mis turnos</a></li>
@@ -106,7 +111,7 @@
                             </li>
                         </ul>
                     </li>-->
-                   
+
                 </ul>
             </div>
         </nav>
