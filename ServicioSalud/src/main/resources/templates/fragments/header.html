@@ -95,7 +95,8 @@
                     <li class="nav-item dropdown"
                         sec:authorize="hasRole('ROLE_USER')or hasRole('ROLE_ADMIN')or hasRole('ROLE_PROFESIONAL')">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"> Perfil <span
+                            data-bs-toggle="dropdown" aria-expanded="false" style="display: flex; align-items: center;"><img src="/images/icon-usuario.png"
+                            style="max-width: 25px; height: auto; display: flex; margin-right:7px;"> Perfil&nbsp;<span
                                 th:if="${session.usuariosession != null}"
                                 th:text="${session.usuariosession.nombreUsuario}"></span></a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">

@@ -1,5 +1,4 @@
 body {
-
     background-image: url('/images/index-admin2.jpg');
     margin-top: 10px;
     margin: 0px;
@@ -8,7 +7,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-size: cover;
-
 }
 
 /*.content {
@@ -20,31 +18,26 @@ body {
 .imagen-fondoadmin,
 .imagen-fondouser {
     /*position: fixed;*/
-
     width: auto;
     height: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 
 .navbar {
-
     padding: 10px;
 }
 
 /* Estilo para alinear los botones a la derecha */
 .navbar-nav {
     margin-left: auto;
-
 }
 
 /* Estilo para ajustar la separación entre los elementos en la barra de navegación */
 .navbar-nav>li {
     margin-right: 10px;
-
 }
 
 /* Estilo para la imagen del logo */
@@ -54,7 +47,6 @@ body {
     align-items: center;
     max-width: 43px;
     height: auto;
-
 }
 
 
@@ -74,7 +66,6 @@ body {
     margin-left: 10px;
 }
 
-
 /********************************* CARDS DE ADMINISTRACION***********************************/
 .cards-usuarios-admin {
     display: flex;
@@ -86,7 +77,6 @@ body {
     margin-top: 75px;
     z-index: 1;
     /* Ajusta el z-index de las tarjetas para que estén por encima del fondo */
-
 }
 
 .card {
@@ -112,7 +102,6 @@ body {
     /* Altura completa de la tarjeta */
     justify-content: space-around;
     /* Distribuir el espacio verticalmente */
-
 }
 
 .card-body a {
@@ -126,19 +115,7 @@ body {
     transition: 1s;
 }
 
-/*.imagen-fondoadmin {
-    background-image: url('/images/fadmin.jpg');
-
-}*/
-
-/*.imagen-fondouser {
-    background-image: url('/images/fpaciente.jpg');
-
-}*/
-
-
-
-
+/******************REGISTRO DE USUARIO PROFESIONAL*****************/
 .contenedor-formulario-usuario {
     padding: 20px;
     display: flex;
@@ -146,18 +123,16 @@ body {
     align-items: center;
     justify-content: center;
     height: 80vh;
-    margin: 0 auto;
-    max-width: 400px;
-    margin-top: 50px;
+    /* margin: 0 auto;*/
+    max-width: 600px;
+    margin-top: 63px;
     /*ubicacion desde el margen superior*/
-
-
 }
 
 .mi-formulario-usuario {
     text-align: center;
     /*alinea el texto y otros elementos al centro*/
-    padding: 20px;
+    padding: 10px;
     /*agrega espacio de relleno alrededor del contenido del formulario*/
     border-radius: 10px;
     /*aplica bordes redondeados*/
@@ -165,7 +140,7 @@ body {
     /*color de fondo*/
     margin: 0 auto;
     /*para centrar elemento horizontal*/
-
+    /*z-index: 3; Ajusta ubicación de las capas */
     max-width: 400px;
     /*ancho maximo del formulario*/
     width: 100%;
@@ -178,61 +153,36 @@ body {
     display: flex;
     align-items: center;
     justify-content: right;
-    height: 90vh;
+    /*height: 90vh;*/
     width: 58%;
-
-
-}
-
-.contenedor-formulario-login {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    height: 90vh;
-    width: 58%;
-
 }
 
 .mi-formulario {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: #f0f0f088;
+    background-color: rgba(255, 255, 255, 0.6);
     position: center;
-
+    /*z-index: 3; ajusta ubicacion de las capas*/
     max-width: 400px;
-
-
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.4);
 }
 
-/*.banner_taital {
-    padding: 20px;
-    position: relative;
-   
-}*/
-
-/*.fcontainer-fluid{
-    z-index: 3;
-}*/
-
-/*.container {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-
-}*/
+}
 
 .mi-recuadro {
-
     padding: 30px;
     border-radius: 10px;
     background-color: #f0f0f0b0;
     width: 60%;
     max-width: 800px;
     margin-top: 20px;
-
 }
 
 .destacado {
@@ -241,11 +191,9 @@ body {
     font-size: x-large;
 }
 
-
 .img-logo-admin {
     margin-top: 30px;
     align-content: center;
-
 }
 
 /*******************SECTION INFO ADMIN*********************/
@@ -259,7 +207,6 @@ body {
     padding: 20px;
     z-index: 1;
     /* Asegúrate de que el footer esté en un z-index superior */
-
 }
 
 .info-admin p {
@@ -270,11 +217,36 @@ body {
 }
 
 /******************LISTADO DE PACIENTES VISTA ADMINISTRADOR*****************/
+.container-table-adminUsuarios {
+    width: 100%;
+    /* max-width: 9000px;  Ancho máximo de la tabla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
 
-.table {
+.table-list-admin {
+    width: 920px;
+    padding: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.808);
+    text-align: center;
+}
 
-    margin-top: 90px;
+.table-list-admin thead th,
+.table-list-admin tbody td {
+    padding: 3px 3px;
 
+}
+
+.table-list-admin tbody tr:nth-of-type(even) {
+    background-color: #f2f2f2;
+    /* Color de fondo de filas alternas */
+}
+
+.table-list-admin tbody tr:hover {
+    background-color: #e0f7fa;
+    /* Color de fondo al pasar el mouse */
 }
 
 .info-admin-listaPaciente {
@@ -287,7 +259,6 @@ body {
     padding: 20px;
     z-index: 1;
     /* Asegúrate de que el footer esté en un z-index superior */
-
 }
 
 .info-admin-listaPaciente p {
@@ -303,8 +274,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .button-volver a {
@@ -318,30 +287,38 @@ body {
 
 .button-volver a:hover {
     background-color: #1c82f7;
+}
 
+.btn-primary {
+    margin-top: auto;
+    background-color: #61ada0;
+    /* Color verde */
+    color: #fff;
+    /* Texto blanco */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 3);
+    margin-top: auto;
+    /* Mover el botón hacia abajo al final de la tarjeta */
+    text-decoration: none;
+    transition: 1s;
 }
 
 /******************FOOTER ADMINISTRADOR*****************/
-
 .footer {
     background-color: #f0f0f0;
     padding: 25px;
     text-align: center;
     position: fixed;
     bottom: 0;
-
     width: 100%;
     z-index: 1;
     /* Asegúrate de que el footer esté en un z-index superior */
-
-
 }
 
 /*ubicacion texto footer*/
 .footer p {
     display: inline;
     margin-right: 10px;
-
 }
 
 .footer .icon {
@@ -350,5 +327,4 @@ body {
     height: auto;
     margin-right: 5px;
     /* Espaciado entre los íconos y el texto */
-
 }

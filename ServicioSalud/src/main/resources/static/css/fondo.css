@@ -162,15 +162,12 @@ body {
     margin-top: 20px;
     margin-bottom: 34px;
     padding: 8px;
-
-
 }
 
 .section-turnos p {
     padding-top: 12px;
     text-align: center;
     font-size: large;
-    
 }
 
 .especialidades {
@@ -181,7 +178,6 @@ body {
     flex-wrap: wrap;
     /* Para que las tarjetas se ajusten en filas */
     margin-bottom: 70px;
-
 }
 
 .card {
@@ -189,7 +185,6 @@ body {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     /* Transición suave */
-
 }
 
 .card:hover {
@@ -235,20 +230,17 @@ body {
     text-align: center;
     font-weight: 900;
     margin-top: 20px;
-
     padding: 15px;
-
 }
 
 .suscripcion p {
     padding-top: 12px;
     text-align: center;
     font-size: large;
-
 }
 
 
-
+/****************CONTENEDOR REGISTRO DE USUARIO****************/
 .contenedor-formulario-usuario {
     padding: 20px;
     display: flex;
@@ -260,8 +252,6 @@ body {
     max-width: 600px;
     margin-top: 63px;
     /*ubicacion desde el margen superior*/
-
-
 }
 
 .mi-formulario-usuario {
@@ -290,8 +280,6 @@ body {
     justify-content: right;
     /*height: 90vh;*/
     width: 58%;
-
-
 }
 
 /**************** CONTENEDOR LOGIN USUARIO****************/
@@ -303,7 +291,6 @@ body {
     height: auto;
     width: auto;
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.4);
-
 }
 .contenedor-formulario-login {
     display: flex;
@@ -312,7 +299,6 @@ body {
     height: 90vh;
     width: auto;
     /*z-index: 1;-->*/
-    
 }
 
 .mi-formulario {
